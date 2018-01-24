@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		165DB378201882EC00A35530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DB377201882EC00A35530 /* AppDelegate.swift */; };
-		165DB37A201882EC00A35530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DB379201882EC00A35530 /* ViewController.swift */; };
+		165DB37A201882EC00A35530 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DB379201882EC00A35530 /* MapViewController.swift */; };
 		165DB37D201882EC00A35530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165DB37B201882EC00A35530 /* Main.storyboard */; };
 		165DB37F201882EC00A35530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165DB37E201882EC00A35530 /* Assets.xcassets */; };
 		165DB382201882EC00A35530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165DB380201882EC00A35530 /* LaunchScreen.storyboard */; };
+		165DB38A2018944700A35530 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DB3892018944700A35530 /* PlacesViewController.swift */; };
+		681E3BD3ED67FBF9EA6ACAA0 /* Pods_TrackerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDE2DA620370164102F041C /* Pods_TrackerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		165DB374201882EC00A35530 /* TrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165DB377201882EC00A35530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		165DB379201882EC00A35530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		165DB379201882EC00A35530 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		165DB37C201882EC00A35530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		165DB37E201882EC00A35530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165DB381201882EC00A35530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		165DB383201882EC00A35530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165DB3892018944700A35530 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		5C22B129A8C047E0DFC1ECF8 /* Pods-TrackerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerApp/Pods-TrackerApp.release.xcconfig"; sourceTree = "<group>"; };
+		8D26C34D8DA30645B7B43854 /* Pods-TrackerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerApp/Pods-TrackerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BDDE2DA620370164102F041C /* Pods_TrackerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681E3BD3ED67FBF9EA6ACAA0 /* Pods_TrackerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				165DB376201882EC00A35530 /* TrackerApp */,
 				165DB375201882EC00A35530 /* Products */,
+				414B9229ABED86AD6CEE0E9F /* Pods */,
+				943D018A6DF9F662F7BA4BF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +64,31 @@
 			isa = PBXGroup;
 			children = (
 				165DB377201882EC00A35530 /* AppDelegate.swift */,
-				165DB379201882EC00A35530 /* ViewController.swift */,
+				165DB379201882EC00A35530 /* MapViewController.swift */,
+				165DB3892018944700A35530 /* PlacesViewController.swift */,
 				165DB37B201882EC00A35530 /* Main.storyboard */,
 				165DB37E201882EC00A35530 /* Assets.xcassets */,
 				165DB380201882EC00A35530 /* LaunchScreen.storyboard */,
 				165DB383201882EC00A35530 /* Info.plist */,
 			);
 			path = TrackerApp;
+			sourceTree = "<group>";
+		};
+		414B9229ABED86AD6CEE0E9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D26C34D8DA30645B7B43854 /* Pods-TrackerApp.debug.xcconfig */,
+				5C22B129A8C047E0DFC1ECF8 /* Pods-TrackerApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		943D018A6DF9F662F7BA4BF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDDE2DA620370164102F041C /* Pods_TrackerApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 165DB386201882EC00A35530 /* Build configuration list for PBXNativeTarget "TrackerApp" */;
 			buildPhases = (
+				B2B2BF415A35D2944D924DFF /* [CP] Check Pods Manifest.lock */,
 				165DB370201882EC00A35530 /* Sources */,
 				165DB371201882EC00A35530 /* Frameworks */,
 				165DB372201882EC00A35530 /* Resources */,
+				DF19D153DA3DC3911E6AAB2B /* [CP] Embed Pods Frameworks */,
+				719E12A2858ABEFE86B0623E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		719E12A2858ABEFE86B0623E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackerApp/Pods-TrackerApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B2BF415A35D2944D924DFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF19D153DA3DC3911E6AAB2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackerApp/Pods-TrackerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		165DB370201882EC00A35530 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				165DB37A201882EC00A35530 /* ViewController.swift in Sources */,
+				165DB38A2018944700A35530 /* PlacesViewController.swift in Sources */,
+				165DB37A201882EC00A35530 /* MapViewController.swift in Sources */,
 				165DB378201882EC00A35530 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +351,7 @@
 		};
 		165DB387201882EC00A35530 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D26C34D8DA30645B7B43854 /* Pods-TrackerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +367,7 @@
 		};
 		165DB388201882EC00A35530 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C22B129A8C047E0DFC1ECF8 /* Pods-TrackerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
