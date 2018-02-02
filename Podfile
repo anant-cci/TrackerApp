@@ -8,5 +8,6 @@ target 'TrackerApp' do
   # Pods for TrackerApp
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Firebase/Database'
 
 end

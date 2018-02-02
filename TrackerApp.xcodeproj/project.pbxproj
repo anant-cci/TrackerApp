@@ -12,7 +12,10 @@
 		165DB37D201882EC00A35530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165DB37B201882EC00A35530 /* Main.storyboard */; };
 		165DB37F201882EC00A35530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165DB37E201882EC00A35530 /* Assets.xcassets */; };
 		165DB382201882EC00A35530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165DB380201882EC00A35530 /* LaunchScreen.storyboard */; };
-		165DB38A2018944700A35530 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DB3892018944700A35530 /* PlacesViewController.swift */; };
+		16EE9B5F20243A2400D3EE33 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9B5E20243A2400D3EE33 /* Location.swift */; };
+		16EE9B6120243ACF00D3EE33 /* FirebaseLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9B6020243ACF00D3EE33 /* FirebaseLocationService.swift */; };
+		16EE9B6320243AFD00D3EE33 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE9B6220243AFD00D3EE33 /* LocationManager.swift */; };
+		16EE9B6520243FA100D3EE33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16EE9B6420243FA100D3EE33 /* GoogleService-Info.plist */; };
 		681E3BD3ED67FBF9EA6ACAA0 /* Pods_TrackerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDE2DA620370164102F041C /* Pods_TrackerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +27,10 @@
 		165DB37E201882EC00A35530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165DB381201882EC00A35530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		165DB383201882EC00A35530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		165DB3892018944700A35530 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		16EE9B5E20243A2400D3EE33 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		16EE9B6020243ACF00D3EE33 /* FirebaseLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLocationService.swift; sourceTree = "<group>"; };
+		16EE9B6220243AFD00D3EE33 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		16EE9B6420243FA100D3EE33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C22B129A8C047E0DFC1ECF8 /* Pods-TrackerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerApp/Pods-TrackerApp.release.xcconfig"; sourceTree = "<group>"; };
 		8D26C34D8DA30645B7B43854 /* Pods-TrackerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerApp/Pods-TrackerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BDDE2DA620370164102F041C /* Pods_TrackerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,15 +69,58 @@
 		165DB376201882EC00A35530 /* TrackerApp */ = {
 			isa = PBXGroup;
 			children = (
+				16EE9B5D202439BB00D3EE33 /* Models */,
+				16EE9B5C202439B800D3EE33 /* WebServices */,
+				16EE9B5B2024399600D3EE33 /* StoryBoards */,
+				16EE9B5A2024399300D3EE33 /* Controllers */,
+				16EE9B592024397E00D3EE33 /* Managers */,
 				165DB377201882EC00A35530 /* AppDelegate.swift */,
-				165DB379201882EC00A35530 /* MapViewController.swift */,
-				165DB3892018944700A35530 /* PlacesViewController.swift */,
-				165DB37B201882EC00A35530 /* Main.storyboard */,
 				165DB37E201882EC00A35530 /* Assets.xcassets */,
 				165DB380201882EC00A35530 /* LaunchScreen.storyboard */,
 				165DB383201882EC00A35530 /* Info.plist */,
+				16EE9B6420243FA100D3EE33 /* GoogleService-Info.plist */,
 			);
 			path = TrackerApp;
+			sourceTree = "<group>";
+		};
+		16EE9B592024397E00D3EE33 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				16EE9B6220243AFD00D3EE33 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		16EE9B5A2024399300D3EE33 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				165DB379201882EC00A35530 /* MapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16EE9B5B2024399600D3EE33 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				165DB37B201882EC00A35530 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		16EE9B5C202439B800D3EE33 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				16EE9B6020243ACF00D3EE33 /* FirebaseLocationService.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		16EE9B5D202439BB00D3EE33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16EE9B5E20243A2400D3EE33 /* Location.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		414B9229ABED86AD6CEE0E9F /* Pods */ = {
@@ -154,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				165DB382201882EC00A35530 /* LaunchScreen.storyboard in Resources */,
+				16EE9B6520243FA100D3EE33 /* GoogleService-Info.plist in Resources */,
 				165DB37F201882EC00A35530 /* Assets.xcassets in Resources */,
 				165DB37D201882EC00A35530 /* Main.storyboard in Resources */,
 			);
@@ -214,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				165DB38A2018944700A35530 /* PlacesViewController.swift in Sources */,
+				16EE9B6120243ACF00D3EE33 /* FirebaseLocationService.swift in Sources */,
+				16EE9B6320243AFD00D3EE33 /* LocationManager.swift in Sources */,
 				165DB37A201882EC00A35530 /* MapViewController.swift in Sources */,
+				16EE9B5F20243A2400D3EE33 /* Location.swift in Sources */,
 				165DB378201882EC00A35530 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
